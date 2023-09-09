@@ -21,3 +21,7 @@ Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Tem
     • In the first line of the file, add the line import React, { Component } from 'react' to make React functions available in this file.
     • On the third line of the file, add the statement let quizData = require('./quiz_data.json')
     • Create a class named Quiz that extends Component. After that component is created, add export default Quiz as the last line of the file.
+        • Add a render() method to the Quiz class that returns a single <div>. For now, inside of that div, add the text Quiz.
+    • Add a constructor() function to the Quiz class that has props as a parameter. Inside of that constructor, call the super() method and pass props as an argument.
+    • Still inside of the constructor() function, set this.state equal to {quiz_position: 1}.
+    • Now that we've got some data available in the component's state, inside of the single div in the render function of the component, remove the text Quiz, and replace it with a child <div> that has a className of QuizQuestion.
