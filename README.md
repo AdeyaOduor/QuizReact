@@ -16,7 +16,7 @@ By default, Replit runs the `dev` script, but you can configure it by changing t
 
 Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
 
-#Module 1 Steps
+# Module 1 Steps
     • Create a new file in src/ named Quiz.js
     • In the first line of the file, add the line import React, { Component } from 'react' to make React functions available in this file.
     • On the third line of the file, add the statement let quizData = require('./quiz_data.json')
