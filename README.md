@@ -29,7 +29,7 @@ Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Tem
     • Now that the Quiz component is displaying something, open up App.js, and import Quiz from ./Quiz.js.
     • Finally, still in app.js, in the render() function's return statement, replace the <div /> with a <Quiz /> component. Now when you run npm start and visit localhost:3000 in a web browser, you should see the text of the first question.
 
-    # Module 2 Steps
+# Module 2 Steps   
 Refactor the Quiz component to display quiz question data in a new component named QuizQuestion.
     • Create a new file in src/ named QuizQuestion.js.
     • Still in QuizQuestion.js, at the top of the file, import the React module and Component class from react.
