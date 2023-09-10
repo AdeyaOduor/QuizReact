@@ -31,6 +31,7 @@ Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Tem
 
 # Module 2 Steps   
 Refactor the Quiz component to display quiz question data in a new component named QuizQuestion.
+
     • Create a new file in src/ named QuizQuestion.js.
     • Still in QuizQuestion.js, at the top of the file, import the React module and Component class from react.
     • Still in QuizQuestion.js, create a class named QuizQuestion that extends Component. After that component is created, add export default QuizQuestion as the last line of the file.
