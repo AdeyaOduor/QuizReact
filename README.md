@@ -25,3 +25,6 @@ Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Tem
     • Add a constructor() function to the Quiz class that has props as a parameter. Inside of that constructor, call the super() method and pass props as an argument.
     • Still inside of the constructor() function, set this.state equal to {quiz_position: 1}.
     • Now that we've got some data available in the component's state, inside of the single div in the render function of the component, remove the text Quiz, and replace it with a child <div> that has a className of QuizQuestion.
+        • Inside of that div with a className of QuizQuestion, access the first element in the quiz_questions property of the quizData object, and display the instruction_text value.
+    • Now that the Quiz component is displaying something, open up App.js, and import Quiz from ./Quiz.js.
+    • Finally, still in app.js, in the render() function's return statement, replace the <div /> with a <Quiz /> component. Now when you run npm start and visit localhost:3000 in a web browser, you should see the text of the first question.
