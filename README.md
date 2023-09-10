@@ -28,3 +28,14 @@ Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Tem
         • Inside of that div with a className of QuizQuestion, access the first element in the quiz_questions property of the quizData object, and display the instruction_text value.
     • Now that the Quiz component is displaying something, open up App.js, and import Quiz from ./Quiz.js.
     • Finally, still in app.js, in the render() function's return statement, replace the <div /> with a <Quiz /> component. Now when you run npm start and visit localhost:3000 in a web browser, you should see the text of the first question.
+
+    # Module 2 Steps
+Refactor the Quiz component to display quiz question data in a new component named QuizQuestion.
+    • Create a new file in src/ named QuizQuestion.js.
+    • Still in QuizQuestion.js, at the top of the file, import the React module and Component class from react.
+    • Still in QuizQuestion.js, create a class named QuizQuestion that extends Component. After that component is created, add export default QuizQuestion as the last line of the file.
+    • flip back over to Quiz.js and send over the quiz question data as a prop. To start, in Quiz.js import QuizQuestion from ./QuizQuestion.js at the top of the file near your other imports.
+    • Still in Quiz.js, replace the entire div with a className of QuizQuestion with the <QuizQuestion /> component.
+    • In that <QuizQuestion /> component, add a prop named quiz_question that passes the value of the quizData.quiz_questions array at the state's quiz_position minus 1. If you do this right, this will send data for the first question over to the QuizQuestion component.
+    • Back in QuizQuestion.js, in the ul tag, add an li tag that displays the value of this.props.quiz_question.answer_options[0]
+    • Finally, in the first section's paragraph tag, display the instruction_text from this.props. Now when you run npm start and visit localhost:3000 in a web browser, you should see the text of the first question and the text of one of the answer options.
