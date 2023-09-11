@@ -52,6 +52,7 @@ Refactor the QuizQuestion component to display quiz answer buttons in a new comp
     • Still in QuizQuestion.js, replace the li tag and value with the <QuizQuestionButton /> component.
     • Add a prop named button_text on that QuizQuestionButton component, and send this.props.quiz_question.answer_options[0] as the value.
     • Now that you're sending button_text as a prop, access that in QuizQuestionButton.js and place it as the text content of the <button> tag.
+    
 # Module 4 Steps
 create a QuizEnd component that will display a reset quiz link after the quiz is completed.
     • Create a new file in src/ named QuizEnd.js.
