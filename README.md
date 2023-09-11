@@ -55,6 +55,7 @@ Refactor the QuizQuestion component to display quiz answer buttons in a new comp
     
 # Module 4 Steps
 create a QuizEnd component that will display a reset quiz link after the quiz is completed.
+
     • Create a new file in src/ named QuizEnd.js.
     • In QuizEnd.js, at the top of the file, import the React module and Component class from react.
     • Still in QuizEnd.js, create a class named QuizEnd that extends Component. After that component is created, add export default QuizEnd as the last line of the file.
