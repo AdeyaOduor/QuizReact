@@ -52,3 +52,13 @@ Refactor the QuizQuestion component to display quiz answer buttons in a new comp
     • Still in QuizQuestion.js, replace the li tag and value with the <QuizQuestionButton /> component.
     • Add a prop named button_text on that QuizQuestionButton component, and send this.props.quiz_question.answer_options[0] as the value.
     • Now that you're sending button_text as a prop, access that in QuizQuestionButton.js and place it as the text content of the <button> tag.
+# Module 4 Steps
+create a QuizEnd component that will display a reset quiz link after the quiz is completed.
+    • Create a new file in src/ named QuizEnd.js.
+    • In QuizEnd.js, at the top of the file, import the React module and Component class from react.
+    • Still in QuizEnd.js, create a class named QuizEnd that extends Component. After that component is created, add export default QuizEnd as the last line of the file.
+    • Still in QuizEnd.js, in the return of the render() function, add the following HTML <div> <p>Thanks for playing!</p> <a href=''>Reset Quiz</a> </div>
+    • Now that we've got the QuizEnd component, open up Quiz.js again and import QuizEnd from ./QuizEnd.js at the top of the file near your other imports.
+    • In the render() method's return statement, add the QuizEnd component on the line before the QuizQuestion component (but still a child of the main div).
+    • We only want the QuizEnd component to display when the last quiz question has been answered. We can determine if we're at the last question by checking if the state's quiz_position minus 1 is identical to quizData.quiz_questions.length. Save the result of that check on a single line in a const named isQuizEnd NOTE: that const should be declared inside of the render() method, but above the return statement.
+    • Write a condition in JSX that displays QuizEnd component if the isQuizEnd constant is true. If it is false, display QuizQuestion component keeping the quiz_question prop that's already there. Note: until we get the full logic set up, you can test if this is working by manually setting isQuizEnd to true or false.
