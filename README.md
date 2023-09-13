@@ -80,6 +80,7 @@ Refactor the QuizQuestion component to iterate over an array of questions and di
 
 Add state to the QuizQuestion class that tracks if a questions was answered incorrectly, and display an error message if the last answer was incorrect.
 
+
     • With the logic we have right now, clicking on an incorrect answer does nothing, so we can add some logic to display an error message. Start in QuizQuestion.js by adding a constructor() function that has props as a parameter and calls the super() method and pass props as an argument.
     • In QuizQuestion's constructor() function, set the state equal to a JavaScript object with the key incorrectAnswer set to false. We'll use this state to track if the question has been answered correctly.
     • In the QuizQuestion component's handleClick() method, use this.setState() to set incorrectAnswer to false in the true condition, and true in the false condition.
